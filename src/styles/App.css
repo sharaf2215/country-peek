@@ -254,3 +254,57 @@
 .page-status--error {
   color: #dc3545;
 }
+
+.fav-btn {
+  background: none;
+  border: none;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.2s;
+  width: fit-content;
+}
+
+.fav-btn:hover {
+  color: var(--text);
+}
+
+.fav-btn--saved {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.fav-btn--saved:hover {
+  color: #d62828;
+}
+
+.fav-btn {
+  background: none;
+  border: none;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.2s;
+  width: fit-content;
+}
+
+.fav-btn:hover {
+  color: var(--text);
+}
+
+.fav-btn--saved {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.fav-btn--saved:hover {
+  color: #d62828;
+}
