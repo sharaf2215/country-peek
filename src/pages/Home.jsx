@@ -12,7 +12,8 @@ function Home() {
   const [sortBy, setSortBy] = useState('')
 
   useEffect(() => {
-    if (!query.trim()) {
+    const trimmedQuery = query.trim()
+    if (!trimmedQuery) {
       setCountries([])
       setError(null)
       return
@@ -22,7 +23,7 @@ function Home() {
       setLoading(true)
       setError(null)
 
-      fetch('https://restcountries.com/v3.1/name/' + query)
+      fetch('https://restcountries.com/v3.1/name/' + trimmedQuery)
         .then((res) => {
           if (!res.ok) {
             throw new Error('No countries found.')

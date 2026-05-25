@@ -11,7 +11,11 @@ function Header() {
       <nav className="header__nav">
         <Link to="/">Home</Link>
         <Link to="/favourites">Favourites</Link>
-        <button label={theme === 'light' ? 'Dark Mode' : 'Light Mode'} className="theme-toggle" onClick={toggleTheme}>
+        <button 
+          aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'} 
+          className="theme-toggle" 
+          onClick={toggleTheme}
+        >
            {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
         </button>
       </nav>
